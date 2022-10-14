@@ -2,8 +2,6 @@
 Tic Tac Toe Player
 """
 
-import math
-
 X = "X"
 O = "O"
 EMPTY = None
@@ -84,9 +82,9 @@ def result(board, action):
     return new_board
 
 
-def player_result(board, action, player):
+def player_result(board, action, current_player):
     new_board = [row.copy() for row in board]
-    new_board[action[0]][action[1]] = player
+    new_board[action[0]][action[1]] = current_player
     return new_board
 
 
